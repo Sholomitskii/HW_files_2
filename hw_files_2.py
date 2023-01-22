@@ -1,10 +1,6 @@
-with open('1.txt', 'r') as file1:
-    text1 = file1.readlines()
-with open('2.txt', 'r') as file2:
-    text2 = file2.readlines()
-with open('3.txt', 'r') as file3:
-    text3 = file3.readlines()
-
+with open ('1.txt', 'r') as file1, open('2.txt', 'r') as file2, open ('3.txt', 'r') as file3:
+    text1, text2, text3 = file1.readlines(), file2.readlines(), file3.readlines()
+   
 str_len_list = [len(text1), len(text2), len(text3)]
 file_list = [file1.name, file2.name, file3.name]
 text_list = [text1, text2, text3]
